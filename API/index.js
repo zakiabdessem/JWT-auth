@@ -21,10 +21,7 @@ mongoose
 app.use(
   cors({
     credentials: true,
-    origin: [
-      "http://localhost:5173",
-      "https://endearing-manatee-7b9388.netlify.app",
-    ],
+    origin: ['*'],
     methods: ["GET", "POST"],
   })
 );
