@@ -39,14 +39,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const authRoute = require("./routes/auth");
 app.use("/auth", authRoute);
 
-const profileRoute = require("./routes/profile");
-app.use("/profile", profileRoute);
-
-const postRoute = require("./routes/posts");
-app.use("/post", postRoute);
-
-const changeEmail = require("./routes/credentials_change/email_change");
-app.use("/change/email", changeEmail);
 
 app.listen("3000", () => {
   console.log("listening to port 3000");
